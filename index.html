@@ -10,3 +10,32 @@
 <link rel="stylesheet" href="style.css">
 
 <h1>what's up brah!</h1>
+<h3>view my wares.</h3>
+ <div class="wares">
+  <button onclick="wares()" class="waresbutt">Dropdown</button>
+  <div id="waresdrpdwn" class="wares-links">
+    <a href="#">yettobe</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div> 
+<script>
+// stolen example code, if someone can do better pls contact me :sob:
+  // function
+  function wares() {
+  document.getElementById("waresdrpdwn").classList.toggle("show");
+}
+  // the actual drop-down
+window.onclick = function(event) {
+  if (!event.target.matches('.waresbutt')) {
+    var wares = document.getElementsByClassName("wares-links");
+    var i;
+    for (i = 0; i < wares.length; i++) {
+      var openmywares = wares[i];
+      if (openmywares.classList.contains('show')) {
+        openmywares.classList.remove('show');
+      }
+    }
+  }
+} 
+</script>
