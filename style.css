@@ -8,3 +8,47 @@ background-color: black;
     margin-top: auto;
   margin-top: 5%;
 }
+ /* drop it down.. */
+.wares {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* hover and focus */
+.wares:hover, .wares:focus {
+  background-color: #2980B9;
+}
+
+/* position wares drop down */
+.waresdrpdwn {
+  position: relative;
+  display: inline-block;
+}
+
+/* wares links */
+.wares-links {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* wares links link styling */
+.wares-links a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* change color of wares links link on hover */
+.wares-links a:hover {background-color: #ddd;}
+
+/* drop it down pt. 2 */
+.show {display:block;} 
