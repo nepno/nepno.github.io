@@ -1,0 +1,9 @@
+# What is a robot? A miserable little pile of metal!
+# 2024
+
+User-Agent: *
+Disallow:
+
+User-Agent: *
+Disallow: /res/
+Disallow: /bg/
