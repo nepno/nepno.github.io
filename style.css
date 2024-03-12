@@ -9,34 +9,40 @@ background-color: black;
   margin-top: 5%;
 }
  /* drop it down.. */
-.wares {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+.waresbutt {
+  background-color: white;
+  border-block: none;
+  border-inline: none;
+  color: black;
+  font-family: Monospace;
+  font-size: 25px;
+  
   cursor: pointer;
 }
 
-/* hover and focus */
-.wares:hover, .wares:focus {
-  background-color: #2980B9;
+/* i said AE,,.,.. what's going on... */
+.waresbutt:hover {
+  background-color: #AEAEAE;
+  border-inline-color: #AEAEAE;
+  border-block-color: #AEAEAE;
+  
 }
 
 /* position wares drop down */
-.waresdrpdwn {
-  position: relative;
-  display: inline-block;
+.wares {
+  text-align: center;
+ font-size: 10px;
+ display: inline-block;
 }
 
 /* wares links */
 .wares-links {
   display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  position: center;
+  background-color: white;
+  font-size: 20px;
+  animation: awesome, 0.5s, cubic-bezier;
+ 
 }
 
 /* wares links link styling */
@@ -52,3 +58,5 @@ background-color: black;
 
 /* drop it down pt. 2 */
 .show {display:block;} 
+
+/* ADD "AWESOME" ANIMATION HERE */
